@@ -80,15 +80,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm text-primary-foreground/70">
                 <Mail className="w-4 h-4" />
-                hello@kidcoderclub.com
+                kidcooder@gmail.com
               </li>
               <li className="flex items-center gap-2 text-sm text-primary-foreground/70">
                 <Phone className="w-4 h-4" />
-                +62 812-3456-7890
+                +62 812-2364-8245
               </li>
               <li className="flex items-start gap-2 text-sm text-primary-foreground/70">
                 <MapPin className="w-4 h-4 mt-0.5" />
-                Jl. Coding No. 123, Jakarta, Indonesia
+                Kota Semarang, Jawa Tengah, Indonesia
               </li>
             </ul>
           </div>
