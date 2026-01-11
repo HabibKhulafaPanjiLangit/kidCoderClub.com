@@ -4,12 +4,20 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Heart, Target, Users, Lightbulb, ArrowRight } from "lucide-react";
+import hababImage from "@/assets/images/habib.jpg";
+import savaImage from "@/assets/images/sava.jpg";
+import faizImage from "@/assets/images/faiz.jpg";
+import wahyuImage from "@/assets/images/wahyu.jpg";
+import aryaImage from "@/assets/images/arya.jpg";
+import kamalImage from "@/assets/images/kamal.jpg";
 
 const team = [
-  { name: "Sarah Chen", role: "Pendiri & CEO", emoji: "👩‍💻" },
-  { name: "David Park", role: "Kepala Kurikulum", emoji: "👨‍🏫" },
-  { name: "Maya Johnson", role: "Lead Developer", emoji: "👩‍🔬" },
-  { name: "Alex Kim", role: "Manajer Komunitas", emoji: "🧑‍🤝‍🧑" },
+  { name: "Habib Khulafa", role: "Pendiri & CEO", image: hababImage },
+  { name: "Sava Aurellia", role: "Kepala Kurikulum", image: savaImage },
+  { name: "M.Faiz Tsulistiyo Zaen", role: "Lead Developer", image: faizImage },
+  { name: "Wahyu Cahyo", role: "Manajer Komunitas", image: wahyuImage },
+  { name: "Arya Mahardika", role: "Cyber Security", image: aryaImage },
+  { name: "Kamal Fauzi", role: "UI/UX Designer", image: kamalImage },
 ];
 
 const values = [
@@ -174,23 +182,29 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="w-24 h-24 rounded-full bg-card shadow-lg flex items-center justify-center text-5xl mx-auto mb-4">
-                  {member.emoji}
-                </div>
-                <h3 className="font-semibold">{member.name}</h3>
-                <p className="text-sm text-muted-foreground">{member.role}</p>
-              </motion.div>
-            ))}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-4xl">
+              {team.map((member, index) => (
+                <motion.div
+                  key={member.name}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="text-center"
+                >
+                  <div className="w-24 h-24 rounded-full bg-card shadow-lg flex items-center justify-center overflow-hidden mx-auto mb-4">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <h3 className="font-semibold">{member.name}</h3>
+                  <p className="text-sm text-muted-foreground">{member.role}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
