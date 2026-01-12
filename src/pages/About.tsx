@@ -86,9 +86,9 @@ const About = () => {
               <h2 className="text-3xl font-bold mb-6">Cerita Kami</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Semuanya dimulai pada tahun 2020 ketika pendiri kami, Sarah, melihat 
+                  Semuanya dimulai pada tahun 2025 ketika pendiri kami, Salah satu dari anggota team kidCoderClub, melihat 
                   keponakannya kesulitan menemukan sumber belajar coding yang menarik. 
-                  Kebanyakan platform terlalu membosankan atau terlalu rumit untuk anak-anak.
+                  Kebanyakan pelajaran sekolah terlalu membosankan atau terlalu rumit untuk anak-anak.
                 </p>
                 <p>
                   Jadi dia mengumpulkan tim pendidik dan developer yang bersemangat 
@@ -96,8 +96,9 @@ const About = () => {
                   coding terasa seperti bermain game.
                 </p>
                 <p>
-                  Hari ini, KidCoderClub telah membantu lebih dari 10.000 coder muda dari 
-                  50+ negara menemukan kegembiraan pemrograman. Dan kami baru saja memulai!
+                  Hingga hari ini, KidCoderClub telah menginspirasi lebih dari 10.000 coder muda dari lebih 50 negara,
+                  membantu mereka menemukan kesenangan dan petualangan di dunia pemrograman.
+                  Dan ini baru permulaan—petualangan coding seru masih menanti!
                 </p>
               </div>
             </motion.div>
