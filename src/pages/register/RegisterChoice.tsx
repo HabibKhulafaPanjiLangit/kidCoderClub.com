@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Code2, GraduationCap, Users } from "lucide-react";
+import { GraduationCap, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const RegisterChoice = () => {
@@ -13,9 +13,7 @@ const RegisterChoice = () => {
       >
         {/* Logo */}
         <Link to="/" className="flex items-center justify-center gap-2 mb-8">
-          <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center">
-            <Code2 className="w-7 h-7 text-primary-foreground" />
-          </div>
+          <img src="/logo-kidcoderclub.png" alt="KidCoderClub" className="w-12 h-12 rounded-md object-contain bg-white p-1" />
           <span className="text-2xl font-bold text-gradient">KidCoderClub</span>
         </Link>
 

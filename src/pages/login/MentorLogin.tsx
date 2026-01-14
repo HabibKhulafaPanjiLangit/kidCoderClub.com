@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Code2, Mail, Lock, Eye, EyeOff, Users } from "lucide-react";
+import { Mail, Lock, Eye, EyeOff, Users } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 
@@ -89,9 +89,7 @@ const MentorLogin = () => {
         >
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 mb-8">
-            <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
-              <Code2 className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <img src="/logo-kidcoderclub.png" alt="KidCoderClub" className="w-10 h-10 rounded-md object-contain bg-white p-1" />
             <span className="text-xl font-bold text-gradient">KidCoderClub</span>
           </Link>
 

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { 
-  Code2, BookOpen, Trophy, Clock, Play, LogOut, 
+  BookOpen, Trophy, Clock, Play, LogOut, 
   Settings, User, ChevronRight, Flame
 } from "lucide-react";
 
@@ -42,9 +42,7 @@ const Dashboard = () => {
         <div className="p-6">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 mb-8">
-            <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
-              <Code2 className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <img src="/logo-kidcoderclub.png" alt="KidCoderClub" className="w-10 h-10 rounded-md object-contain bg-white p-1" />
             <span className="text-xl font-bold text-gradient">KidCoderClub</span>
           </Link>
 
