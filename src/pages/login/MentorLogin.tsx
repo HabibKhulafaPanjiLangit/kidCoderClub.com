@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Mail, Lock, Eye, EyeOff, Users } from "lucide-react";
+import { Mail, Lock, Eye, EyeOff, Users, ArrowLeft } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 
@@ -87,6 +87,20 @@ const MentorLogin = () => {
           animate={{ opacity: 1, x: 0 }}
           className="w-full max-w-md"
         >
+          {/* Back Button */}
+          <div className="mb-4">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => navigate(-1)}
+              className="gap-2 bg-sky-100 text-sky-700 hover:bg-sky-200 border-sky-300 hover:border-sky-400 border-2"
+              title="Kembali ke halaman sebelumnya"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Kembali
+            </Button>
+          </div>
+
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 mb-8">
             <img src="/logo-kidcoderclub.png" alt="KidCoderClub" className="w-10 h-10 rounded-md object-contain bg-white p-1" />
