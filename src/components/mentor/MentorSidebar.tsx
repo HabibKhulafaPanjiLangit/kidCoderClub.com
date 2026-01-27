@@ -19,7 +19,6 @@ import {
   UserCircle,
   ClipboardList,
   ClipboardCheck,
-  Code2,
   LogOut
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -62,9 +61,7 @@ export function MentorSidebar() {
     <Sidebar collapsible="icon" className="border-r border-border">
       <SidebarHeader className="border-b border-border p-4">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center flex-shrink-0">
-            <Code2 className="w-5 h-5 text-primary-foreground" />
-          </div>
+          <img src="/logo-kidcoderclub.png" alt="KidCoderClub" className="w-10 h-10 rounded-md object-contain flex-shrink-0" />
           {!collapsed && (
             <div>
               <h2 className="font-bold text-sm">Mentor Panel</h2>

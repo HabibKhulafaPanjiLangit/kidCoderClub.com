@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { GraduationCap, Users } from "lucide-react";
+import { GraduationCap, Users, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const RegisterChoice = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen flex items-center justify-center bg-background p-8">
       <motion.div
@@ -11,6 +12,20 @@ const RegisterChoice = () => {
         animate={{ opacity: 1, y: 0 }}
         className="w-full max-w-lg"
       >
+        {/* Back Button */}
+        <div className="mb-4">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => navigate(-1)}
+            className="gap-2 bg-sky-100 text-sky-700 hover:bg-sky-200 border-sky-300 hover:border-sky-400 border-2"
+            title="Kembali ke halaman sebelumnya"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Kembali
+          </Button>
+        </div>
+
         {/* Logo */}
         <Link to="/" className="flex items-center justify-center gap-2 mb-8">
           <img src="/logo-kidcoderclub.png" alt="KidCoderClub" className="w-12 h-12 rounded-md object-contain bg-white p-1" />

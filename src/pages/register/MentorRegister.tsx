@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Lock, User, Eye, EyeOff, Users, Briefcase, Upload, FileText } from "lucide-react";
+import { Mail, Lock, User, Eye, EyeOff, Users, Briefcase, Upload, FileText, ArrowLeft } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/integrations/supabase/client";
@@ -199,6 +199,20 @@ const MentorRegister = () => {
           animate={{ opacity: 1, x: 0 }}
           className="w-full max-w-md py-8"
         >
+          {/* Back Button */}
+          <div className="mb-4">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => navigate(-1)}
+              className="gap-2 bg-sky-100 text-sky-700 hover:bg-sky-200 border-sky-300 hover:border-sky-400 border-2"
+              title="Kembali ke halaman sebelumnya"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Kembali
+            </Button>
+          </div>
+
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 mb-6">
             <img src="/logo-kidcoderclub.png" alt="KidCoderClub" className="w-10 h-10 rounded-md object-contain bg-white p-1" />
